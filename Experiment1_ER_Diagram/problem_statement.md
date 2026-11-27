@@ -22,8 +22,9 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 - Payments tracked for memberships and sessions.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_fitness.png)
+ 
+<img width="1202" height="851" alt="image" src="https://github.com/user-attachments/assets/77b029b3-754c-4fbc-ab72-37cbf9243208" />
+
 
 ### Entities and Attributes
 
@@ -44,9 +45,14 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 |              |            |               |       |
 
 ### Assumptions
-- 
-- 
-- 
+
+* Each member, program, trainer, payment and session has a unique ID for identification.
+
+* A member can register for multiple programs, and each program can have multiple members.
+
+* Each member is assigned to a trainer, and a trainer can handle multiple members.
+
+* Attendance is recorded for each session with the date and present/absent status, and payments are recorded for each member.
 
 ---
 
@@ -64,8 +70,9 @@ The Central Library wants to manage book lending and cultural events.
 - Overdue fines apply for late returns.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_library.png)
+ 
+<img width="1175" height="787" alt="image" src="https://github.com/user-attachments/assets/e883c231-da6c-4288-ae63-1a1a190956c0" />
+
 
 ### Entities and Attributes
 
@@ -86,9 +93,14 @@ The Central Library wants to manage book lending and cultural events.
 |              |            |               |       |
 
 ### Assumptions
-- 
-- 
-- 
+
+* Each member, book, loan, event, speaker, room and registration has a unique ID for identification.
+
+* A member can borrow multiple books, and each loan record stores the loan date and due date.
+
+* Members can register for multiple events, and each event can have multiple registrations and speakers.
+
+* Each event is conducted in a room with a defined capacity, and event registrations are recorded with registration dates.
 
 ---
 
@@ -106,8 +118,9 @@ A popular restaurant wants to manage reservations, orders, and billing.
 - Waiters assigned to serve reservations.
 
 ### ER Diagram:
-*Paste or attach your diagram here*  
-![ER Diagram](er_diagram_restaurant.png)
+ 
+<img width="1199" height="723" alt="image" src="https://github.com/user-attachments/assets/e64b64dd-673f-4b93-a75c-06edca7ac05c" />
+
 
 ### Entities and Attributes
 
@@ -128,10 +141,14 @@ A popular restaurant wants to manage reservations, orders, and billing.
 |              |            |               |       |
 
 ### Assumptions
-- 
-- 
-- 
 
+* Each customer, table, reservation, bill, dish, order and waiter has a unique ID for identification.
+
+* A customer can make multiple reservations, and each reservation is associated with a specific table and reservation date.
+
+* Each order is linked to a reservation, and an order can contain multiple dishes with specified quantities.
+
+* Each reservation is handled by a waiter, and bills are generated for the orders placed during the reservation.
 ---
 
 ## Instructions for Students
